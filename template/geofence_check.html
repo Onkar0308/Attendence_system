@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geofence Check</title>
+</head>
+<body>
+    <h1>Geofence Check</h1>
+    <p>Current Location: {{ current_location }}</p>
+    {% if inside_geofence %}
+        <p>Inside the geofence!</p>
+    {% else %}
+        <p>Outside the geofence.</p>
+    {% endif %}
+</body>
+</html>
